@@ -1,0 +1,68 @@
+/* General Styles */
+body {
+    margin-top: 0px;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .skills-section {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .skills-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #444;
+  }
+  
+  /* Chart Container */
+  .chart-container {
+    width: 80%;
+    margin: 0 auto;
+    height: 400px; /* Fixed height for bar and pie charts */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @media (max-width: 768px) {
+    .skills-title {
+      font-size: 2rem;
+    }
+  
+    .chart-container {
+      height: 300px;
+    }
+  }
+
+  
+  .skills-section {
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .skills-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  canvas {
+    max-width: 100%;
+    height: auto !important;
+  }
+
+
+
+  
+  
