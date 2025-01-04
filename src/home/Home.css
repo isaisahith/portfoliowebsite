@@ -1,17 +1,3 @@
-/* General Styling */
-body {
-  font-family: "Arial", sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.homepage {
-  background-color: #f8f9fa; /* Light gray background */
-  padding: 2rem;
-}
-
-/* About Section */
 .about-section {
   display: flex;
   align-items: center;
@@ -24,72 +10,50 @@ body {
   background: #ffffff;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   opacity: 0;
-  animation: fadeIn 1.5s forwards; /* Animation added here */
+  animation: fadeIn 1.5s forwards;
 }
 
-/* Fade-in Animation for About Section */
 @keyframes fadeIn {
-  from {
-      opacity: 0;
-  }
-  to {
-      opacity: 1;
-  }
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
-/* Left Content */
 .about-content {
   flex: 1;
   margin-right: 2rem;
   max-width: 600px;
-  transform: translateX(-30px); /* Start from the left */
+  transform: translateX(-30px);
   opacity: 0;
-  animation: slideInLeft 1s forwards; /* Animation added here */
+  animation: slideInLeft 1s forwards;
 }
 
 @keyframes slideInLeft {
   from {
-      transform: translateX(-30px);
-      opacity: 0;
+    transform: translateX(-30px);
+    opacity: 0;
   }
   to {
-      transform: translateX(0);
-      opacity: 1;
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 
-.about-content h1 {
-  font-size: 4rem;
-  font-weight: bold;
-  text-transform: lowercase;
-  color: #333;
-  margin-bottom: 1rem;
-}
-
-.about-content p {
-  font-size: 1.2rem;
-  line-height: 1.8;
-  color: #666;
-  margin-bottom: 1rem;
-}
-
-/* Right Image */
 .about-image {
   flex: 1;
   text-align: center;
   opacity: 0;
-  transform: scale(0.9); /* Start slightly smaller */
-  animation: scaleIn 1.5s forwards; /* Animation added here */
+  transform: scale(0.9);
+  animation: scaleIn 1.5s forwards;
 }
 
 @keyframes scaleIn {
   from {
-      opacity: 0;
-      transform: scale(0.9);
+    opacity: 0;
+    transform: scale(0.9);
   }
   to {
-      opacity: 1;
-      transform: scale(1);
+    opacity: 1;
+    transform: scale(1);
   }
 }
 
@@ -98,22 +62,5 @@ body {
   max-width: 400px;
   border-radius: 10px;
   object-fit: cover;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .about-section {
-      flex-direction: column;
-      text-align: center;
-  }
-
-  .about-content {
-      margin-right: 0;
-      margin-bottom: 2rem;
-  }
-
-  .about-image img {
-      max-width: 300px;
-  }
+  box-shadow: 0px 4px 12px rgba(0, 0, 0,)
 }
