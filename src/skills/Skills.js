@@ -64,7 +64,7 @@ const Skills = () => {
 
   return (
     <section className="skills-section" id="skills">
-      <h1 className="skills-title">My Skills</h1>
+      <h2 className="skills-title">My Skills</h2>
       <div className="chart-container">
         {isMobile ? <Pie data={pieData} /> : <Bar data={barData} options={barOptions} />}
       </div>
