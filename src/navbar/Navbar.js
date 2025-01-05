@@ -3,6 +3,8 @@ import { Link } from 'react-scroll'; // For smooth scrolling to sections
 import './Navbar.css';
 import Home from '../home/Home';
 import Skills from '../skills/Skills';
+import MyEducation from '../education/MyEducation';
+import Projects from '../projects/Projects';
 
 const Navbar = () => {
   return (
@@ -14,8 +16,8 @@ const Navbar = () => {
       <ul className="navbar-links">
         <li><Link to="home" smooth={true} duration={500}>About</Link></li>
         <li><Link to="skills" smooth={true} duration={500}>Skills</Link></li>
-        <li><Link to="portfolio" smooth={true} duration={500}>Portfolio</Link></li>
-        <li><Link to="blog" smooth={true} duration={500}>Blog</Link></li>
+        <li><Link to="edu" smooth={true} duration={500}>My Education</Link></li>
+        <li><Link to="projects" smooth={true} duration={500}>Projects</Link></li>
         <li><Link to="contact" smooth={true} duration={500}>Contact</Link></li>
       </ul>
       <div className="navbar-icons">
@@ -32,6 +34,13 @@ const Navbar = () => {
     </div>
     <div id='skills'>
     <Skills/>
+    </div>
+
+    <div id='edu'>
+      <MyEducation/>
+    </div>
+    <div id='projects'>
+      <Projects/>
     </div>
 
     </>
