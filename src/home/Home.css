@@ -19,8 +19,8 @@
 }
 
 .about-content {
-  flex: 1;
-  margin-right: 2rem;
+  flex: 1 1 45%; /* Allows flexibility for wrapping */
+  margin: 1rem;
   max-width: 600px;
   transform: translateX(-30px);
   opacity: 0;
@@ -39,7 +39,7 @@
 }
 
 .about-image {
-  flex: 1;
+  flex: 1 1 45%; /* Adjusts with content on smaller screens */
   text-align: center;
   opacity: 0;
   transform: scale(0.9);
@@ -62,5 +62,25 @@
   max-width: 400px;
   border-radius: 10px;
   object-fit: cover;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0,)
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column; /* Stack content vertically */
+    align-items: center;
+  }
+
+  .about-content,
+  .about-image {
+    flex: 1 1 100%; /* Take full width */
+    max-width: 100%; /* Ensure no overflow */
+    margin: 1rem 0; /* Add vertical spacing */
+  }
+
+  .about-content {
+    transform: translateX(0); /* No offset on smaller screens */
+    animation: fadeIn 1s forwards; /* Use fade-in instead of slide-in */
+  }
 }

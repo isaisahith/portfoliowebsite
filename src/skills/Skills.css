@@ -1,68 +1,104 @@
 /* General Styles */
 body {
-    margin-top: 0px;
-    padding: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
+  margin-top: 0px;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.skills-section {
+  padding: 2rem;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInSection 1s ease-out forwards;
+}
+
+@keyframes fadeInSection {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
-  
-  .skills-section {
-    padding: 2rem;
-    text-align: center;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
+}
+
+.skills-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #444;
+  opacity: 0;
+  transform: translateX(-30px);
+  animation: slideInFromLeft 1s ease-out 0.3s forwards; /* Delayed animation */
+}
+
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Chart Container */
+.chart-container {
+  width: 80%;
+  margin: 0 auto;
+  height: 400px; /* Fixed height for bar and pie charts */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: scale(0.9);
+  animation: scaleInChart 1.2s ease-out 0.6s forwards; /* Delayed animation */
+}
+
+@keyframes scaleInChart {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 768px) {
   .skills-title {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    color: #444;
+    font-size: 2rem;
   }
-  
-  /* Chart Container */
+
   .chart-container {
-    width: 80%;
-    margin: 0 auto;
-    height: 400px; /* Fixed height for bar and pie charts */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 300px;
   }
-  
-  @media (max-width: 768px) {
-    .skills-title {
-      font-size: 2rem;
-    }
-  
-    .chart-container {
-      height: 300px;
-    }
-  }
+}
 
-  
-  .skills-section {
-    padding: 1rem;
-    text-align: center;
-  }
-  
-  .skills-title {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  .chart-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-  }
-  
-  canvas {
-    max-width: 100%;
-    height: auto !important;
-  }
+/* Mobile-specific animations */
+.skills-section {
+  padding: 1rem;
+}
 
+.skills-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
 
+.chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
 
-  
-  
+canvas {
+  max-width: 100%;
+  height: auto !important;
+}

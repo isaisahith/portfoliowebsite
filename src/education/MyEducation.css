@@ -1,0 +1,65 @@
+/* General Page Styling */
+.education-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .education-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    font-family: "Arial", sans-serif;
+    margin-bottom: 30px;
+  }
+  
+  /* Education List Styling */
+  .education-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .education-item {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    opacity: 0; /* Initially hidden */
+    transform: translateY(30px); /* Start slightly below */
+    transition: all 0.8s ease-in-out; /* Smooth transition */
+  }
+  
+  .education-item h3 {
+    font-size: 1.8rem;
+    color: #444;
+    margin-bottom: 10px;
+  }
+  
+  .education-item .institution {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  .education-item .year {
+    font-style: italic;
+    color: #777;
+    margin-bottom: 10px;
+  }
+  
+  .education-item .description {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* Triggered Animation */
+  .education-item.visible {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Move to original position */
+  }
+  
