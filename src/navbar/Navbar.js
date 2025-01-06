@@ -17,19 +17,31 @@ const Navbar = () => {
   return (
     <>
       <nav className="navbar">
-        <div className="navbar-logo">
-          <img src="/logo.png" alt="Logo" />
-        </div>
-        <div className="navbar-icons">
-          <a href="#"><i className="fab fa-twitter"></i></a>
-          <a href="#"><i className="fab fa-linkedin"></i></a>
-          <a href="#"><i className="fab fa-facebook"></i></a>
-          <a href="#"><i className="fab fa-instagram"></i></a>
-        </div>
-        <div className="hamburger" onClick={toggleMenu}>
-          <span className={`bar ${isMenuOpen ? 'open' : ''}`}></span>
-          <span className={`bar ${isMenuOpen ? 'open' : ''}`}></span>
-          <span className={`bar ${isMenuOpen ? 'open' : ''}`}></span>
+        <div className="navbar-container">
+          <div className="navbar-logo">
+            <img src="/logo.png" alt="Logo" />
+          </div>
+
+          <ul className={`navbar-links ${isMenuOpen ? 'active' : ''}`}>
+            <li><Link to="home" smooth={true} duration={500} >About</Link></li>
+            <li><Link to="skills" smooth={true} duration={500} >Skills</Link></li>
+            <li><Link to="edu" smooth={true} duration={500} >My Education</Link></li>
+            <li><Link to="projects" smooth={true} duration={500} >Projects</Link></li>
+            <li><Link to="contactme" smooth={true} duration={500} >Contact Me</Link></li>
+          </ul>
+
+          <div className="navbar-icons">
+            <a href="#"><i className="fab fa-twitter"></i></a>
+            <a href="#"><i className="fab fa-linkedin"></i></a>
+            <a href="#"><i className="fab fa-facebook"></i></a>
+            <a href="#"><i className="fab fa-instagram"></i></a>
+          </div>
+
+          <div className="hamburger" onClick={toggleMenu}>
+            <span className={`bar ${isMenuOpen ? 'open' : ''}`}></span>
+            <span className={`bar ${isMenuOpen ? 'open' : ''}`}></span>
+            <span className={`bar ${isMenuOpen ? 'open' : ''}`}></span>
+          </div>
         </div>
       </nav>
 
@@ -43,27 +55,20 @@ const Navbar = () => {
         </ul>
       </div>
 
-      <ul className="navbar-links">
-        <li><Link to="home" smooth={true} duration={500}>About</Link></li>
-        <li><Link to="skills" smooth={true} duration={500}>Skills</Link></li>
-        <li><Link to="edu" smooth={true} duration={500}>My Education</Link></li>
-        <li><Link to="projects" smooth={true} duration={500}>Projects</Link></li>
-        <li><Link to="contact" smooth={true} duration={500}>Contact</Link></li>
-      </ul>
-
-      <div id='home'>
+      {/* Page Sections */}
+      <div id="home">
         <Home />
       </div>
-      <div id='skills'>
+      <div id="skills">
         <Skills />
       </div>
-      <div id='edu'>
+      <div id="edu">
         <MyEducation />
       </div>
-      <div id='projects'>
+      <div id="projects">
         <Projects />
       </div>
-      <div id='contactme'>
+      <div id="contactme">
         <ContactMe />
       </div>
     </>

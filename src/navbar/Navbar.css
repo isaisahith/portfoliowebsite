@@ -7,6 +7,7 @@
   padding: 1rem 2rem;
   color: #fff;
   position: fixed;
+  top:0px;
   right: 0;
   left: 0;
   z-index: 100;
@@ -126,20 +127,52 @@
 
 
 
+
+
+.navbar-links{
+  display: flex;
+
+}
+
+.navbar-links li{
+  text-decoration: none;
+}
+
+
+.navbar-link{
+  margin-left: 50px;
+}
+
+
+/* Ensure navbar-links are responsive */
 .navbar-links {
   display: flex;
   list-style: none;
   gap: 2rem;
 }
 
-.navbar-links a {
-  cursor: pointer;
-  text-decoration: none;
-  color: #fff;
-  font-size: 1rem;
-  text-transform: capitalize;
+.navbar-links.active {
+  display: flex; /* To support sidebar-style view when toggled */
 }
 
-.navbar-links a:hover {
-  color: #ffd700;
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none; /* Hide links by default on small screens */
+  }
+
+  .hamburger {
+    display: flex; /* Show hamburger menu on small screens */
+  }
+}
+
+
+.navbar-container{
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hamburger{
+
 }
