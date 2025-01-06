@@ -9,6 +9,7 @@ body {
 
 .skills-section {
   padding: 2rem;
+  margin: 25px;
   text-align: center;
   opacity: 0;
   transform: translateY(20px);
@@ -27,12 +28,12 @@ body {
 }
 
 .skills-title {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
+  font-size: 3rem; /* Increased font size */
+  margin-bottom: 3rem;
   color: #444;
+  font-weight: bold; /* Added bold styling */
   opacity: 0;
-  transform: translateX(-30px);
-  animation: slideInFromLeft 1s ease-out 0.3s forwards; /* Delayed animation */
+  animation: fadeIn 1.5s ease-in-out forwards;
 }
 
 @keyframes slideInFromLeft {
@@ -72,7 +73,7 @@ body {
 
 @media (max-width: 768px) {
   .skills-title {
-    font-size: 2rem;
+    font-size: 2.5rem; /* Increased for better visibility on mobile */
   }
 
   .chart-container {
@@ -86,8 +87,9 @@ body {
 }
 
 .skills-title {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
+  font-weight: bold;
 }
 
 .chart-container {
