@@ -22,7 +22,7 @@ const Navbar = () => {
             <img src="/logo.png" alt="Logo" />
           </div>
 
-          <ul className={`navbar-links ${isMenuOpen ? 'active' : ''}`}>
+          <ul className={`navbar-links`}>
             <li><Link to="home" smooth={true} duration={500} >About</Link></li>
             <li><Link to="skills" smooth={true} duration={500} >Skills</Link></li>
             <li><Link to="edu" smooth={true} duration={500} >My Education</Link></li>
@@ -46,6 +46,10 @@ const Navbar = () => {
       </nav>
 
       <div className={`sidebar ${isMenuOpen ? 'active' : ''}`}>
+
+      <div className="sidebar-header">
+          <button className="close-btn" onClick={toggleMenu}>&times;</button>
+        </div>
         <ul>
           <li><Link to="home" smooth={true} duration={500} onClick={toggleMenu}>About</Link></li>
           <li><Link to="skills" smooth={true} duration={500} onClick={toggleMenu}>Skills</Link></li>
