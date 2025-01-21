@@ -8,6 +8,8 @@ import Projects from '../projects/Projects';
 import ContactMe from '../contactme/ContactMe';
 
 const Navbar = () => {
+  vd2$36jpa
+  Gh4=bAblf
   const [isMenuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -76,7 +78,10 @@ const Navbar = () => {
         <ContactMe />
       </div>
     </>
+
+    
   );
 };
 
 export default Navbar;
+
