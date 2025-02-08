@@ -94,3 +94,16 @@
   margin: 1rem 0; /* Added vertical spacing */
   text-align: justify; /* Align text to both left and right margins */
 }
+
+.header{
+  font-size: 2.5rem;
+  color: #333;
+  font-family: "Arial", sans-serif;
+  margin-bottom: 30px;
+}
+
+.techstack{
+  font-size: 1.4rem;
+  color: #444;
+  margin-bottom: 10px;
+}
