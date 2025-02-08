@@ -6,10 +6,10 @@ import Skills from '../skills/Skills';
 import MyEducation from '../education/MyEducation';
 import Projects from '../projects/Projects';
 import ContactMe from '../contactme/ContactMe';
+import Experience from '../experience/Experience';
 
 const Navbar = () => {
-  vd2$36jpa
-  Gh4=bAblf
+  
   const [isMenuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -29,7 +29,9 @@ const Navbar = () => {
             <li><Link to="skills" smooth={true} duration={500} >Skills</Link></li>
             <li><Link to="edu" smooth={true} duration={500} >My Education</Link></li>
             <li><Link to="projects" smooth={true} duration={500} >Projects</Link></li>
+            <li><Link to="experience" smooth={true} duration={500} >Experience</Link></li>
             <li><Link to="contactme" smooth={true} duration={500} >Contact Me</Link></li>
+            
           </ul>
 
           <div className="navbar-icons">
@@ -57,7 +59,9 @@ const Navbar = () => {
           <li><Link to="skills" smooth={true} duration={500} onClick={toggleMenu}>Skills</Link></li>
           <li><Link to="edu" smooth={true} duration={500} onClick={toggleMenu}>My Education</Link></li>
           <li><Link to="projects" smooth={true} duration={500} onClick={toggleMenu}>Projects</Link></li>
+          <li><Link to="experience" smooth={true} duration={500} onClick={toggleMenu}>Experience</Link></li>
           <li><Link to="contactme" smooth={true} duration={500} onClick={toggleMenu}>Contact Me</Link></li>
+          
         </ul>
       </div>
 
@@ -68,11 +72,15 @@ const Navbar = () => {
       <div id="skills">
         <Skills />
       </div>
-      <div id="edu">
-        <MyEducation />
+      <div id="experience">
+        <Experience />
       </div>
+      
       <div id="projects">
         <Projects />
+      </div>
+      <div id="edu">
+        <MyEducation />
       </div>
       <div id="contactme">
         <ContactMe />

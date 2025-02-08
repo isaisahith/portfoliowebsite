@@ -7,8 +7,8 @@ import './Skills.css';
 ChartJS.register(CategoryScale, LinearScale, BarElement, ArcElement, Tooltip, Legend);
 
 const skillsData = [
-  { name: 'Java', grade: 'Jedi', percentage: 95, color: '#FF6F61' },
-  { name: 'Spring Boot', grade: 'Ninja', percentage: 90, color: '#6B5B95' },
+  { name: 'Java', grade: 'Jedi', percentage: 80, color: '#FF6F61' },
+  { name: 'Spring Boot', grade: 'Ninja', percentage: 70, color: '#6B5B95' },
   { name: 'React', grade: 'Geek', percentage: 85, color: '#88B04B' },
   { name: 'JavaScript', grade: 'Ninja', percentage: 80, color: '#F7CAC9' },
   { name: 'CSS', grade: 'Geek', percentage: 70, color: '#034F84' },
