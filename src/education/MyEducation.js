@@ -27,8 +27,8 @@ const MyEducation = () => {
   const educationData = [
     {
       degree: "Bachelor of Technology in Civil Engineering",
-      institution: "ABC University",
-      year: "2018 - 2022",
+      institution: "SSN College of Engineering",
+      year: "2015 - 2019",
       description: "Graduated with a CGPA of 8.1/10.0, building a strong foundation in civil engineering principles and practices.",
       
     },
