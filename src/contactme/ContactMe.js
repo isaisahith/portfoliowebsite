@@ -27,7 +27,7 @@ const ContactMe = () => {
       </p>
       <div className="social-icons">
         <a
-          href="https://www.linkedin.com/"
+          href="https://www.linkedin.com/in/saisahith-inakota?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
           target="_blank"
           rel="noopener noreferrer"
           className="icon linkedin"
@@ -35,7 +35,7 @@ const ContactMe = () => {
           <FaLinkedin />
         </a>
         <a
-          href="https://github.com/"
+          href="https://github.com/isaisahith"
           target="_blank"
           rel="noopener noreferrer"
           className="icon github"
@@ -51,7 +51,7 @@ const ContactMe = () => {
           <FaTwitter />
         </a>
         <a
-          href="https://www.instagram.com/"
+          href="https://www.instagram.com/i_saisahith"
           target="_blank"
           rel="noopener noreferrer"
           className="icon instagram"
@@ -59,7 +59,7 @@ const ContactMe = () => {
           <FaInstagram />
         </a>
         <a
-          href="mailto:your.email@example.com"
+          href="mailto:saisahithinakota@gmail.com"
           className="icon email"
         >
           <FaEnvelope />

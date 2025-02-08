@@ -26,21 +26,22 @@ const MyEducation = () => {
 
   const educationData = [
     {
-      degree: "Bachelor of Technology in Computer Science",
+      degree: "Bachelor of Technology in Civil Engineering",
       institution: "ABC University",
       year: "2018 - 2022",
-      description: "Focused on software development, data structures, and algorithms.",
+      description: "Graduated with a CGPA of 8.1/10.0, building a strong foundation in civil engineering principles and practices.",
+      
     },
     {
       degree: "Intermediate Education",
-      institution: "XYZ Junior College",
-      year: "2016 - 2018",
-      description: "Completed coursework in Mathematics, Physics, and Chemistry.",
+      institution: "Narayana Junior College",
+      year: "2015 - 2019",
+      description: "Stood first in the college with 98% marks in science stream.",
     },
     {
       degree: "High School Education",
-      institution: "LMN High School",
-      year: "2014 - 2016",
+      institution: "Priyadharshini High School",
+      year: "2004 - 2013",
       description: "Achieved top marks in science and mathematics.",
     },
   ];

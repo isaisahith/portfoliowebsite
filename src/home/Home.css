@@ -84,3 +84,13 @@
     animation: fadeIn 1s forwards; /* Use fade-in instead of slide-in */
   }
 }
+
+
+.aboutme {
+  font-size: 0.9rem; /* Smaller font size */
+  line-height: 1.6; /* Good spacing for readability */
+  font-family: 'Arial', sans-serif; /* Adjusted font type */
+  color: #333; /* Darker color for better readability */
+  margin: 1rem 0; /* Added vertical spacing */
+  text-align: justify; /* Align text to both left and right margins */
+}
